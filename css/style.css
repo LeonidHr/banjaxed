@@ -713,6 +713,7 @@ body::after {
   color: #1A1A29;
   border: none;
   outline: none;
+  background: transparent;
 }
 
 .popup-promo__body {
@@ -782,6 +783,7 @@ body::after {
   padding-top: 2.5rem;
   background-color: #fff;
   border-radius: 1.25rem;
+  position: relative;
 }
 
 .result-popup__text {
@@ -1705,6 +1707,9 @@ body::after {
           align-items: center;
   overflow: hidden;
   row-gap: 0.9375rem;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .item-average-bg__body {
@@ -1712,6 +1717,9 @@ body::after {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding-right: 1.25rem;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .item-average-bg .item-average__list {
