@@ -1692,9 +1692,6 @@ body::after {
   background: url("../img/average/bg.png") center/cover no-repeat; }
 
 .item-average-bg {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   border-radius: 1.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2507,6 +2504,12 @@ body::after {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 34.125rem;
             flex: 0 1 34.125rem;
+  }
+
+  .item-average-bg {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 61.375rem;
+            flex: 0 1 61.375rem;
   }
 
   .reviews__hooks {
