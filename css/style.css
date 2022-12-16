@@ -1244,7 +1244,8 @@ body::after {
   position: relative;
 }
 
-.mainscreen__img img {
+.mainscreen__img img,
+.mainscreen__img video {
   max-width: 100%;
   position: relative;
   z-index: 2;
@@ -2473,7 +2474,7 @@ body::after {
 
 @media (min-width: 61.99875em) and (min-width: 104.375em) {
   .mainscreen__img-fire {
-    bottom: 2.5rem;
+    bottom: 1.875rem;
   }
 
   .mainscreen__img-fire {
@@ -4163,7 +4164,7 @@ body::after {
   }
 
   .mainscreen__img-fire {
-    bottom: 1.3125rem;
+    bottom: 1.125rem;
   }
 
   .mainscreen__img-fire {
@@ -4363,7 +4364,8 @@ body::after {
     width: 100%;
   }
 
-  .mainscreen__img img {
+  .mainscreen__img img,
+  .mainscreen__img video {
     margin: 0 auto;
   }
 
@@ -4419,7 +4421,7 @@ body::after {
   }
 
   .mainscreen__img-fire {
-    bottom: 0.9375rem;
+    bottom: 0.75rem;
   }
 }
 
@@ -6226,7 +6228,7 @@ body::after {
   }
 
   .mainscreen__img-fire {
-    bottom: 1.875rem;
+    bottom: 1.25rem;
   }
 
   .mainscreen__img-fire {
@@ -6248,7 +6250,7 @@ body::after {
   }
 
   .mainscreen__img-fire {
-    bottom: 1.875rem;
+    bottom: 1.375rem;
   }
 
   .mainscreen__img-fire {
@@ -6273,15 +6275,15 @@ body::after {
     }
 }
 
-@supports (bottom: clamp( 1.3125rem , 1.0446428571rem  +  1.3392857143vw , 1.875rem )) {
+@supports (bottom: clamp( 1.125rem , 1.005952381rem  +  0.5952380952vw , 1.375rem )) {
     .mainscreen__img-fire {
-      bottom: clamp( 1.3125rem , 1.0446428571rem  +  1.3392857143vw , 1.875rem );
+      bottom: clamp( 1.125rem , 1.005952381rem  +  0.5952380952vw , 1.375rem );
     }
 }
 
-@supports not (bottom: clamp( 1.3125rem , 1.0446428571rem  +  1.3392857143vw , 1.875rem )) {
+@supports not (bottom: clamp( 1.125rem , 1.005952381rem  +  0.5952380952vw , 1.375rem )) {
     .mainscreen__img-fire {
-      bottom: calc(1.3125rem + 0.5625 * (100vw - 20rem) / 42);
+      bottom: calc(1.125rem + 0.25 * (100vw - 20rem) / 42);
     }
 }
 
@@ -6331,15 +6333,15 @@ body::after {
 }
 
 @media (min-width: 61.99875em) and (min-width: 75em) and (max-width: 104.375em) {
-@supports (bottom: clamp( 1.875rem , 0.2792553191rem  +  2.1276595745vw , 2.5rem )) {
+@supports (bottom: clamp( 1.25rem , -0.3457446809rem  +  2.1276595745vw , 1.875rem )) {
     .mainscreen__img-fire {
-      bottom: clamp( 1.875rem , 0.2792553191rem  +  2.1276595745vw , 2.5rem );
+      bottom: clamp( 1.25rem , -0.3457446809rem  +  2.1276595745vw , 1.875rem );
     }
 }
 
-@supports not (bottom: clamp( 1.875rem , 0.2792553191rem  +  2.1276595745vw , 2.5rem )) {
+@supports not (bottom: clamp( 1.25rem , -0.3457446809rem  +  2.1276595745vw , 1.875rem )) {
     .mainscreen__img-fire {
-      bottom: calc(1.875rem + 0.625 * (100vw - 75rem) / 29.375);
+      bottom: calc(1.25rem + 0.625 * (100vw - 75rem) / 29.375);
     }
 }
 
@@ -6428,20 +6430,20 @@ body::after {
 
 @media (max-width: 29.99875em) and (min-width: 62em) {
   .mainscreen__img-fire {
-    bottom: 1.875rem;
+    bottom: 0.9375rem;
   }
 }
 
 @media (max-width: 29.99875em) and (min-width: 20em) and (max-width: 62em) {
-@supports (bottom: clamp( 0.9375rem , 0.4910714286rem  +  2.2321428571vw , 1.875rem )) {
+@supports (bottom: clamp( 0.75rem , 0.6607142857rem  +  0.4464285714vw , 0.9375rem )) {
     .mainscreen__img-fire {
-      bottom: clamp( 0.9375rem , 0.4910714286rem  +  2.2321428571vw , 1.875rem );
+      bottom: clamp( 0.75rem , 0.6607142857rem  +  0.4464285714vw , 0.9375rem );
     }
 }
 
-@supports not (bottom: clamp( 0.9375rem , 0.4910714286rem  +  2.2321428571vw , 1.875rem )) {
+@supports not (bottom: clamp( 0.75rem , 0.6607142857rem  +  0.4464285714vw , 0.9375rem )) {
     .mainscreen__img-fire {
-      bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 42);
+      bottom: calc(0.75rem + 0.1875 * (100vw - 20rem) / 42);
     }
 }
 }
