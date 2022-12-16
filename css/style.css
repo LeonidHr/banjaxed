@@ -1711,9 +1711,6 @@ body::after {
 }
 
 .item-average-bg__body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   padding-right: 1.25rem;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2385,6 +2382,14 @@ body::after {
 @media (min-width: 40.625em) and (min-width: 93.75em) {
   .slider-reviews {
     padding-right: 14.375rem;
+  }
+}
+
+@media (min-width: 41.875em) {
+  .item-average-bg__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
 
@@ -4292,6 +4297,10 @@ body::after {
 }
 
 @media (max-width: 41.875em) and (max-width: 20em) {
+  .item-average-bg {
+    min-height: 28.625rem;
+  }
+
   .item-average-bg__img {
     width: 15.625rem;
   }
@@ -6809,6 +6818,26 @@ body::after {
 @supports not (bottom: clamp( -1.875rem , 12.1875004687rem  +  -15.0000005vw , 0.0000000625rem )) {
     .images-converstations__img-big {
       bottom: calc(0.0000000625rem + -1.8750000625 * (100vw - 81.25rem) / 12.5);
+    }
+}
+}
+
+@media (max-width: 41.875em) and (min-width: 96.25em) {
+  .item-average-bg {
+    min-height: 33.6875rem;
+  }
+}
+
+@media (max-width: 41.875em) and (min-width: 20em) and (max-width: 96.25em) {
+@supports (min-height: clamp( 28.625rem , 27.2971311475rem  +  6.6393442623vw , 33.6875rem )) {
+    .item-average-bg {
+      min-height: clamp( 28.625rem , 27.2971311475rem  +  6.6393442623vw , 33.6875rem );
+    }
+}
+
+@supports not (min-height: clamp( 28.625rem , 27.2971311475rem  +  6.6393442623vw , 33.6875rem )) {
+    .item-average-bg {
+      min-height: calc(28.625rem + 5.0625 * (100vw - 20rem) / 76.25);
     }
 }
 }
